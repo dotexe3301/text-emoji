@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-emoji</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <h1>text <span><i class="ri-arrow-right-line"></i></span> em<span id="heart">&#9829;</span>ji</h1>
+        <div id="endec">
+            <h3 id="encbtn"> <span><i class="ri-lock-line"></i></span>Encrypt Text</h3>
+            <h3 id="decbtn"> <span><i class="ri-lock-unlock-line"></i></span>Decrypt Emojis</h3>
+        </div>
+        <div id="encryption">
+            <h5>1. Type a message</h5>
+            <textarea placeholder="Write your message here" name="" id="txtmsg" cols="30" rows="10" ></textarea>
+            <h5>2. Set a password</h5>
+            <input type="password" id="password" placeholder="eg. 1234" maxlength="10">
+            <h5>3. Encrypt Emojis</h5>
+            <button id="encrypt-btn"><span><i class="ri-lock-line"></i></span>Encrypt Text</button>
+        </div>
+        <div id="decryption">
+            <h5>1. Paste encrypted emojis</h5>
+            <textarea placeholder="Paste encrypted emojis here" name="" id="emojimsg" cols="30" rows="10"></textarea>
+            <h5>2. Type the password</h5>
+            <input type="password" id="finalpassword" placeholder="eg. 1234" maxlength="10">
+            <h5>3. Decrypt Emojis</h5>
+            <button id="decrypt-btn"><span><i class="ri-lock-unlock-line"></i></span>Decrypt Emoji</button>
+        </div>
+        <!-- <div id="resultdiv"> -->
+        <!-- <h3>Text : </h3> -->
+        <div id="result"></div>
+        <!-- </div> -->
+        <div id="end">
+            <h5>made with &#9829; by shivesh</h5>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
